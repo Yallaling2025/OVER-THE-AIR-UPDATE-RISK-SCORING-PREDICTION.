@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>OTA Update Risk Prediction</title>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>🚗 OTA Update Risk Prediction</h1>
+<p class="subtitle">Predict the risk of OTA update failure using machine learning</p>
+
+<form action="/predict" method="post">
+
+<div class="input-group">
+<label>Vehicle Type</label>
+<input type="number" name="type" placeholder="Enter vehicle type" required>
+</div>
+
+<div class="input-group">
+<label>Air Temperature</label>
+<input type="number" step="any" name="air_temp" required>
+</div>
+
+<div class="input-group">
+<label>Process Temperature</label>
+<input type="number" step="any" name="process_temp" required>
+</div>
+
+<div class="input-group">
+<label>Rotational Speed (RPM)</label>
+<input type="number" name="rpm" required>
+</div>
+
+<div class="input-group">
+<label>Torque</label>
+<input type="number" step="any" name="torque" required>
+</div>
+
+<div class="input-group">
+<label>Tool Wear</label>
+<input type="number" name="tool_wear" required>
+</div>
+
+<div class="input-group">
+<label>TWF</label>
+<input type="number" name="twf" required>
+</div>
+
+<div class="input-group">
+<label>HDF</label>
+<input type="number" name="hdf" required>
+</div>
+
+<div class="input-group">
+<label>PWF</label>
+<input type="number" name="pwf" required>
+</div>
+
+<div class="input-group">
+<label>OSF</label>
+<input type="number" name="osf" required>
+</div>
+
+<div class="input-group">
+<label>RNF</label>
+<input type="number" name="rnf" required>
+</div>
+
+<button type="submit" class="predict-btn">Predict Risk</button>
+
+</form>
+
+{% if prediction_text %}
+<div class="result">
+<h2>{{ prediction_text }}</h2>
+</div>
+{% endif %}
+
+</div>
+
+<!-- Developer Banner -->
+<div class="developer-banner">
+<h2>Developer Information</h2>
+<p><strong>Name:</strong> Y D</p>
+<p><strong>Contact:</strong> +----</p>
+</div>
+
+</body>
+</html>

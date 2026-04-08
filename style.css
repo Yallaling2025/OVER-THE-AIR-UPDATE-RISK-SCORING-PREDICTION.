@@ -1,0 +1,105 @@
+/* Reset */
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family: Arial, sans-serif;
+}
+
+/* Page background */
+body{
+background-color:#cfefff;
+display:flex;
+flex-direction:column;
+align-items:center;
+min-height:100vh;
+}
+
+/* Main container */
+.container{
+background:white;
+padding:30px;
+width:420px;
+margin-top:40px;
+border-radius:10px;
+box-shadow:0 6px 15px rgba(0,0,0,0.2);
+text-align:center;
+}
+
+/* Heading */
+h1{
+color:#0b5394;
+margin-bottom:10px;
+}
+
+/* Subtitle */
+.subtitle{
+color:#555;
+margin-bottom:20px;
+}
+
+/* Input groups */
+.input-group{
+text-align:left;
+margin-bottom:12px;
+}
+
+label{
+font-weight:bold;
+font-size:14px;
+}
+
+input{
+width:100%;
+padding:8px;
+margin-top:4px;
+border-radius:6px;
+border:1px solid #ccc;
+}
+
+/* Button */
+.predict-btn{
+width:100%;
+padding:10px;
+margin-top:15px;
+border:none;
+border-radius:6px;
+background:#00a651;
+color:white;
+font-size:16px;
+cursor:pointer;
+}
+
+.predict-btn:hover{
+background:#008a44;
+}
+
+/* Result */
+.result{
+margin-top:20px;
+padding:10px;
+background:#e8f7ff;
+border-radius:6px;
+color:#0b5394;
+}
+
+/* Developer Banner */
+.developer-banner{
+width:100%;
+margin-top:40px;
+padding:20px;
+background:#e5e5e5;   /* light gray */
+text-align:center;
+border-top:3px solid #999;
+}
+
+.developer-banner h2{
+color:#333;
+margin-bottom:10px;
+}
+
+.developer-banner p{
+    box-sizing: border-box;
+font-size:15px;
+color:#444;
+}
