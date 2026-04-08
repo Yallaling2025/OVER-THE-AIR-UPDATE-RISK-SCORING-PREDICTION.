@@ -109,6 +109,16 @@ This ensures safe and reliable software updates.
 
 
 
+![Image](https://github.com/user-attachments/assets/24015ea9-3424-4c9f-a7e4-0d345254b390)
+
+
+
+
+
+
+
+
+
 
 
 The system generates three main outputs.
